@@ -4,6 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, Clock, MapPin, Film, Crown, Bus, Camera, Music, Calendar as CalendarIcon, Trophy, UtensilsCrossed, Flag, Mic2, Guitar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import culturalEvent1 from "@/assets/cultural-event-1.jpg";
+import culturalEvent2 from "@/assets/cultural-event-2.jpg";
 
 const Events = () => {
   const events = [
@@ -162,13 +164,13 @@ const Events = () => {
             <h2 className="text-3xl font-bold mb-6 text-center">Event Highlights</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <img 
-                src="https://ragju45-bualmmwe.manus.space/FB_IMG_1761996137122.jpg" 
-                alt="Event Highlight"
+                src={culturalEvent1}
+                alt="Cultural Dance Performance"
                 className="w-full rounded-lg shadow-lg"
               />
               <img 
-                src="https://ragju45-bualmmwe.manus.space/FB_IMG_1761996233636.jpg" 
-                alt="Event Highlight"
+                src={culturalEvent2}
+                alt="Musical Concert"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
