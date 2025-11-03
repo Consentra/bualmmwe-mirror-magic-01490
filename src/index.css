@@ -9,77 +9,77 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --foreground: 280 40% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 280 40% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 280 40% 15%;
 
-    --primary: 0 78% 50%;
+    --primary: 280 60% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 145 63% 42%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 45 85% 55%;
+    --secondary-foreground: 280 40% 15%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 280 20% 96%;
+    --muted-foreground: 280 15% 47%;
 
-    --accent: 45 100% 51%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 340 75% 55%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 0 78% 50%;
+    --border: 280 15% 91%;
+    --input: 280 15% 91%;
+    --ring: 280 60% 50%;
 
     --radius: 0.75rem;
 
-    /* Vibrant gradients for RAG celebration */
-    --hero-gradient: linear-gradient(135deg, hsl(0 78% 50%) 0%, hsl(15 85% 55%) 25%, hsl(30 90% 60%) 50%, hsl(145 63% 42%) 75%, hsl(160 70% 45%) 100%);
-    --card-gradient: linear-gradient(135deg, hsl(0 78% 50% / 0.03) 0%, hsl(145 63% 42% / 0.03) 100%);
-    --accent-gradient: linear-gradient(135deg, hsl(45 100% 51%) 0%, hsl(35 95% 55%) 100%);
+    /* Rich elegant gradients for RAG celebration */
+    --hero-gradient: linear-gradient(135deg, hsl(280 60% 50%) 0%, hsl(310 65% 55%) 25%, hsl(340 75% 55%) 50%, hsl(45 85% 55%) 75%, hsl(30 80% 60%) 100%);
+    --card-gradient: linear-gradient(135deg, hsl(280 60% 50% / 0.05) 0%, hsl(340 75% 55% / 0.05) 100%);
+    --accent-gradient: linear-gradient(135deg, hsl(340 75% 55%) 0%, hsl(45 85% 55%) 100%);
     
-    /* Shadows with vibrant colors */
-    --shadow-primary: 0 10px 30px -10px hsl(0 78% 50% / 0.3);
-    --shadow-secondary: 0 10px 30px -10px hsl(145 63% 42% / 0.3);
-    --shadow-glow: 0 0 40px hsl(45 100% 51% / 0.2);
+    /* Shadows with elegant colors */
+    --shadow-primary: 0 10px 40px -10px hsl(280 60% 50% / 0.35);
+    --shadow-secondary: 0 10px 40px -10px hsl(340 75% 55% / 0.35);
+    --shadow-glow: 0 0 50px hsl(45 85% 55% / 0.25);
 
     /* Smooth transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    --background: 280 40% 12%;
+    --foreground: 280 10% 98%;
 
-    --card: 222 47% 15%;
-    --card-foreground: 210 40% 98%;
+    --card: 280 40% 16%;
+    --card-foreground: 280 10% 98%;
 
-    --popover: 222 47% 15%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 280 40% 16%;
+    --popover-foreground: 280 10% 98%;
 
-    --primary: 0 78% 55%;
+    --primary: 280 60% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 145 63% 48%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 45 85% 60%;
+    --secondary-foreground: 280 40% 15%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 280 30% 20%;
+    --muted-foreground: 280 15% 70%;
 
-    --accent: 45 100% 55%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 340 75% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 217 33% 25%;
-    --input: 217 33% 25%;
-    --ring: 0 78% 55%;
+    --border: 280 30% 25%;
+    --input: 280 30% 25%;
+    --ring: 280 60% 60%;
   }
 }
 

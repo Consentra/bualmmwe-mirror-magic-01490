@@ -48,9 +48,46 @@ const Registration = () => {
       });
       return;
     }
+
+    // Create email body with all form data
+    const emailBody = `
+RAG 45 Registration Form
+
+PERSONAL INFORMATION:
+Full Name (English): ${formData.fullNameEnglish}
+Full Name (বাংলায়): ${formData.fullNameBangla}
+Father's Name: ${formData.fatherName}
+Mother's Name: ${formData.motherName}
+Date of Birth: ${formData.dateOfBirth}
+Blood Group: ${formData.bloodGroup}
+T-shirt Size: ${formData.tshirtSize}
+
+ACADEMIC INFORMATION:
+Registration Number: ${formData.registrationNumber}
+Department: ${formData.department}
+Hall: ${formData.hall}
+
+CONTACT INFORMATION:
+Email: ${formData.email}
+Phone: ${formData.phone}
+NID Number: ${formData.nidNumber}
+Present Address: ${formData.presentAddress}
+Present Occupation: ${formData.presentOccupation}
+
+EVENT DETAILS:
+Category: ${formData.category}
+Payment Confirmation: ${formData.paymentConfirmation}
+    `.trim();
+
+    // Create mailto link
+    const mailtoLink = `mailto:ragju45@gmail.com?subject=RAG 45 Registration - ${formData.fullNameEnglish}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+
     toast({
-      title: "Registration Submitted!",
-      description: "Thank you for registering. We'll contact you soon.",
+      title: "Opening Email Client",
+      description: "Please send the email from your email client to complete registration.",
     });
   };
 
