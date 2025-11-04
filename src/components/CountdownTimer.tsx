@@ -8,7 +8,7 @@ interface TimeLeft {
 }
 
 const CountdownTimer = ({ targetDate }: { targetDate: Date }) => {
-  const calculateTimeLeft = (): TimeLeft => {
+  const calculateTimeLeft = (): TimeLeft | null => {
     const difference = +targetDate - +new Date();
     
     if (difference > 0) {
@@ -20,10 +20,10 @@ const CountdownTimer = ({ targetDate }: { targetDate: Date }) => {
       };
     }
     
-    return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    return null;
   };
 
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(calculateTimeLeft());
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -41,6 +41,18 @@ const CountdownTimer = ({ targetDate }: { targetDate: Date }) => {
       </span>
     </div>
   );
+
+  if (!timeLeft) {
+    return (
+      <div className="flex items-center justify-center">
+        <div className="bg-primary/80 backdrop-blur-sm rounded-xl p-6 md:p-8 shadow-lg">
+          <p className="text-2xl md:text-3xl font-bold text-primary-foreground text-center">
+            Waiting to see the next one
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex gap-3 md:gap-4 justify-center flex-wrap">

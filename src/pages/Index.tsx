@@ -12,8 +12,8 @@ import campus3 from "@/assets/campus3.jpg";
 import campus4 from "@/assets/campus4.jpg";
 
 const Index = () => {
-  // Set a target date for the countdown (you can modify this)
-  const targetDate = new Date("2025-12-31T23:59:59");
+  // Set countdown to 18th at 5 PM (17:00)
+  const targetDate = new Date("2025-01-18T17:00:00");
 
   const quickLinks = [
     {
