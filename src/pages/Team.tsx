@@ -66,7 +66,7 @@ const Team = () => {
                 <img 
                   src={convener.image} 
                   alt={convener.name}
-                  className="w-48 h-48 object-cover rounded-full mx-auto mb-4"
+                  className="w-48 h-48 object-cover rounded-full mx-auto mb-4 border-4 border-primary"
                 />
                 <h3 className="text-2xl font-bold mb-1">{convener.name}</h3>
                 <p className="text-lg text-muted-foreground">{convener.role}</p>
@@ -84,7 +84,7 @@ const Team = () => {
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-40 h-40 object-cover rounded-full mx-auto mb-4"
+                      className="w-40 h-40 object-cover rounded-full mx-auto mb-4 border-4 border-primary"
                     />
                     <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                     <p className="text-muted-foreground">{member.role}</p>
@@ -102,7 +102,7 @@ const Team = () => {
                 <img 
                   src={treasurer.image} 
                   alt={treasurer.name}
-                  className="w-40 h-40 object-cover rounded-full mx-auto mb-4"
+                  className="w-40 h-40 object-cover rounded-full mx-auto mb-4 border-4 border-primary"
                 />
                 <h3 className="text-xl font-bold mb-1">{treasurer.name}</h3>
                 <p className="text-muted-foreground">{treasurer.role}</p>
@@ -120,7 +120,7 @@ const Team = () => {
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+                      className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-primary"
                     />
                     <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                     <p className="text-muted-foreground">{member.role}</p>
