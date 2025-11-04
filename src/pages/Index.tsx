@@ -57,7 +57,7 @@ const Index = () => {
       <section 
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
         style={{
-          background: `linear-gradient(135deg, rgba(14, 165, 233, 0.85), rgba(6, 182, 212, 0.75), rgba(59, 130, 246, 0.85)), url(${heroBg})`,
+          background: `linear-gradient(135deg, rgba(52, 168, 83, 0.85), rgba(46, 125, 50, 0.75), rgba(67, 160, 71, 0.85)), url(${heroBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundBlendMode: 'multiply'
